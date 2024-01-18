@@ -46,10 +46,10 @@ nav ul li a:hover{
     cursor: pointer;
 }
 
-/* MAin section CSS */
+/* Main section CSS */
 .banner{
     border-radius: 16px;
-    background-image: url('../images/banner.png');
+    background-image: url('../img/banner.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -87,7 +87,8 @@ nav ul li a:hover{
     background: #FFF;
     cursor: pointer;
 }
-.find-btn{
+.find-btn,
+.btn-read{
     padding: 14px 20px;
     border-radius: 8px;
     background: #FF5400;
@@ -95,6 +96,28 @@ nav ul li a:hover{
     font-size: 16px;
     font-weight: 700;
     color: #fff;
+}
+
+/* Popular Tour CSS */
+
+.popular-container{
+    display: flex;
+    gap: 100px;
+}
+.popular-title{
+    margin: 0;
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+}
+.popular-description{
+    margin-top: 24px;
+    color: rgba(19, 19, 24, 0.70);
+    line-height: 26px;
+}
+.popular-content ul li{
+    color: rgba(19, 19, 24, 0.70);
+    line-height: 26px;
 }
 
 
@@ -115,8 +138,7 @@ nav ul li a:hover{
         gap: 10px;
     }
     nav ul{
-        display: flex;
-        gap: 10px;
+        display: none;
     }
 
     /* Banner CSS */
@@ -137,6 +159,20 @@ nav ul li a:hover{
         grid-template-columns: 1fr;
     }
     .find-btn{
+        width: 100%;
+    }
+
+    /* Popular section */
+    .popular-container{
+        grid-template-columns: 1fr;
+        display: grid;
+    }
+    .popular-title{
+        margin-top: 30px;
+        font-size: 28px;
+        text-align: center;
+    }
+    .popular-content-img img{
         width: 100%;
     }
 }
