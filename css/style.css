@@ -1,0 +1,77 @@
+/* Shared CSS */
+*{
+    font-family: 'Mulish', sans-serif;
+}
+.primary-color{
+    color: #131318;
+}
+.orange-color{
+    color: #FF5400;
+}
+section{
+    margin: 50px 130px;
+}
+/* Header CSS */
+header{
+    margin: 0 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.logo h4{
+    font-size: 36px;
+    font-weight: 800;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 44px;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    color: #424247;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: #FF5400;
+    cursor: pointer;
+}
+
+/* MAin section CSS */
+.banner{
+    padding: 100px 0;
+    border-radius: 16px;
+    background: url('../images/banner.png'), linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
+}
+
+
+
+
+/* Media Query */
+
+/* Mobile device */
+@media screen and (max-width: 576px) {
+    header{
+        margin: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .logo {
+        display: flex;
+        gap: 10px;
+    }
+    nav ul{
+        display: flex;
+        gap: 10px;
+    }
+    
+}
