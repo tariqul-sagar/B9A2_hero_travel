@@ -9,7 +9,20 @@
     color: #FF5400;
 }
 section{
-    margin: 50px 130px;
+    margin: 70px 130px;
+}
+.common-title{
+    margin: 0;
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+}
+.common-description{
+    margin-top: 24px;
+    color: rgba(19, 19, 24, 0.70);
+    line-height: 26px;
+    text-align: center;
 }
 /* Header CSS */
 header{
@@ -105,19 +118,60 @@ nav ul li a:hover{
     gap: 100px;
 }
 .popular-title{
-    margin: 0;
-    color: #131318;
-    font-size: 40px;
-    font-weight: 800;
+    text-align: left;
 }
 .popular-description{
-    margin-top: 24px;
-    color: rgba(19, 19, 24, 0.70);
-    line-height: 26px;
+    text-align: left;
 }
 .popular-content ul li{
     color: rgba(19, 19, 24, 0.70);
     line-height: 26px;
+}
+
+/* Destination CSS */
+.destination-title{
+    text-align: center;
+}
+.destination-description{
+    padding: 0 200px;
+    text-align: center;
+}
+
+
+/* Why us CSS */
+.why-us-title{
+    text-align: center;
+}
+.why-us-description{
+    text-align: center;
+    padding: 0 200px;
+}
+.why-us-body-content{
+    display: flex;
+    gap: 25px;
+}
+.why-us-box{
+    margin-top: 50px;
+    padding: 35px 55px 35px 35px;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+.box-2{
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+.box-3{
+    margin: 50px auto;
+    width: 50%;
+}
+.why-us-box-title{
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+}
+.why-us-box-description {
+    text-align: left;
 }
 
 
@@ -127,6 +181,11 @@ nav ul li a:hover{
 @media screen and (max-width: 576px) {
     section{
         margin: 0px;
+    }
+    .common-title{
+        margin-top: 30px;
+        font-size: 26px;
+        text-align: center;
     }
     header{
         margin: 20px;
@@ -149,7 +208,8 @@ nav ul li a:hover{
     .banner-title{
         font-size: 28px;
     }
-    .banner-description{
+    .banner-description,
+    .common-description{
         padding: 0 20px;
     }
     .banner-box{
@@ -164,15 +224,31 @@ nav ul li a:hover{
 
     /* Popular section */
     .popular-container{
+        padding: 20px;
         grid-template-columns: 1fr;
         display: grid;
-    }
-    .popular-title{
-        margin-top: 30px;
-        font-size: 28px;
-        text-align: center;
     }
     .popular-content-img img{
         width: 100%;
     }
+
+    /* Destination CSS */
+
+    /* Why choose CSS */
+    .why-us-body-content{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .box-3{
+        margin-top: 10px;
+        width: auto;
+    }
+    .why-us-box{
+        margin-top: 20px;
+        padding: 20px 0 20px 20px;
+    }
+    .why-us-box-description{
+        padding: 0 10px 0 0;
+    }
+
 }
