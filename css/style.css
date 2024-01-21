@@ -223,6 +223,81 @@ nav ul li a:hover{
     text-align: center;
 }
 
+/* Newsletter CSS */
+.newsletter-content{
+    display: flex;
+    gap: 25px;
+}
+.newletter-form{
+    padding: 40px;
+    border: 1px solid #FF5400;
+    border-radius: 16px;
+}
+.news-form-title{
+    margin: 0;
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+}
+.news-form-description{
+    margin: 15px 0 0;
+    color: #5A5A5D;
+    line-height: 26px;
+}
+.newletter-form hr{
+    margin: 20px 0;
+    background: rgba(19, 19, 24, 0.10);
+}
+form{
+    padding-right: 34px;
+}
+form input{
+    margin-bottom: 16px;
+    padding: 16px;
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    color: rgba(19, 19, 24, 0.30);
+    border: 1px solid rgba(19, 19, 24, 0.30);
+}
+.btn-subscribe{
+    width: 100%;
+}
+.newsletter-img{
+    position: relative;
+}
+.newsletter-img img{
+    width: 100%;
+}
+.discount-box{
+    padding: 30px;
+    position: absolute;
+    transform: rotate(-19.62deg);
+    background-color: #FF5400;
+    border-radius: 16px;
+    bottom: 70px;
+    right: 10px;
+}
+.discount-box-description{
+    margin: 0;
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+.discount-box-title{
+    margin: 0;
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+/* Footer CSS */
+footer{
+    padding: 110px 200px;
+    background: rgba(19, 19, 24, 0.05);
+}
 
 /* Media Query */
 
@@ -303,8 +378,34 @@ nav ul li a:hover{
     }
 
     /* Perfect Place */
+    .p-place-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 0;
+    }
     .p-place-content-img{
         padding: 150px 0;
     }
+    /* Newsletter CSS */
+    .newsletter-content{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .discount-box{
+        padding: 20px;
+        bottom: 30px;
+        right: 5px;
+    }
+    .discount-box-description{
+        margin: 0;
+        font-size: 14px;
+    }
+    .discount-box-title{
+        margin: 0;
+        font-size: 18px;
+    }
+    
 
 }
